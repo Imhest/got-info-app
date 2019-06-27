@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+  	font-family:TrajanPro;
+	src:url(Trajan%20Pro%20Regular.ttf);
+}
+
+
+body{
+	font-family: TrajanPro;
+	text-align: center;
+	color:#FFF;
+    font-size: 0.9em;
+}
+
+P, h3, h2, h1{
+	color:#DADADA;
+	border-color:transparent;
+	text-shadow: 0 /*{a-body-shadow-x}*/ 0px /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ #f3f3f3 /*{a-body-shadow-color}*/;
+}
+
+P{
+	font-size:24px;
+}
+
+h2{
+	font-size:36px;
+}
+
+#contenidohome{
+	background-image: url(conthome.png);
+	background-repeat: repeat;	
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	margin-top:10%;
+	margin-left:5%;
+	margin-right:5%;
+}
+
+#descripcionapp{
+	background-image: url(fondoblanco.png);
+	background-repeat: repeat;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+h4{
+	text-shadow: 0 /*{a-body-shadow-x}*/ 0px /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ #f3f3f3 /*{a-body-shadow-color}*/;
+}
+
+.ui-collapsible-content{
+	background-color:transparent !important;
+	color:#DADADA !important;
+	border-color:rgba(58,58,58,0.50) !important;
+	
+}
+
+.ui-collapsible-content label{
+	background-color:#E9EAED !important;
+	color:#353535 !important;
+}
+
+#temporada1 .ui-collapsible-heading-toggle{
+	background-image:url(temporada1.png) !important;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+#temporada2 .ui-collapsible-heading-toggle{
+	background-image:url(temporada2.png) !important;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+#temporada3 .ui-collapsible-heading-toggle{
+	background-image:url(temporada3.png) !important;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+#temporada4 .ui-collapsible-heading-toggle{
+	background-image:url(temporada4.png) !important;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+#temporada5 .ui-collapsible-heading-toggle{
+	background-image:url(temporada5.png) !important;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.ui-collapsible-heading-toggle{
+	color:#DADADA !important;
+	border-color:#4A4A4A !important;
+	text-shadow: 0 /*{a-body-shadow-x}*/ 0px /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ #f3f3f3 /*{a-body-shadow-color}*/ !important;
+    font-size: 0.75em;
+}
+
+.ui-link {
+	border-color:#4A4A4A !important;
+}
+
+.ui-btn {
+	border-color:#4A4A4A !important;
+}
+
+.ui-title{
+	color:#1E1E1E !important;
+	border-color:#1E1E1E !important;
+	text-shadow: 0 /*{a-body-shadow-x}*/ 0px /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ #f3f3f3 /*{a-body-shadow-color}*/ !important;
+}
+
+#acercade h2{
+    font-size: 2.0em;
+}
+
+#listadotemporada{
+    margin-top: 5%;
+}
+
+.ui-bar{
+    background-color: rgba(224,223,223,0.2) !important;
+    background-image:none;
+
+}
+
+.ui-bar h2{
+    font-size: 2em !important;
+}
+
+.ui-body{
+    background-color: rgba(58,58,58,0.50);
+    border-color: transparent !important;
+}
+
+.ui-body p{
+    font-size: 1.3em;
+    text-align: left;
+}

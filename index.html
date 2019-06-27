@@ -1,0 +1,1592 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="jqm/jquery.mobile-1.4.5.css">
+<script src="jqm/jquery-1.11.3.min.js"></script>
+
+<script>
+    $(document).bind('mobileinit',function(){
+        $.mobile.changePage.defaults.changeHash = false;
+        $.mobile.hashListeningEnabled = false;
+        $.mobile.pushStateEnabled = false;
+    });
+</script> 
+
+<script src="jqm/jquery.mobile-1.4.5.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="mi_tema.css">
+<link rel="stylesheet" type="text/css" href="mi_tema.min.css">
+<link rel="stylesheet" type="text/css" href="temadis.css">
+
+
+<script>
+
+$(document).ready(function() {
+	
+	$.mobile.defaultPageTransition = 'fade';
+	
+});
+
+</script>
+
+<script src="checks.js"></script>
+
+
+<title>Game of Thrones APP</title>
+</head>
+
+<body>
+
+
+  <!--SPRINGBOARD --------------------------------------------------------------------------------------------------->
+
+
+
+<div data-role="page" id="casas">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+
+  <div data-role="content">
+  		<div class="ui-grid-b springboard">
+			<div class="ui-block-a">
+                <a href="#baratheon" data-role="button" data-inline="true">
+                	<img src="botones/boton01.png" alt="btn">
+                </a>
+                <h3> Casa Baratheon </h3>
+            </div>
+			<div class="ui-block-b">
+                <a href="#greyjoy" data-role="button" data-inline="true">
+                	<img src="botones/boton02.png" alt="btn">
+                </a>
+                <h3> Casa Greyjoy </h3>
+            </div>
+			<div class="ui-block-c">
+                <a href="#bolton" data-role="button" data-inline="true">
+                	<img src="botones/boton03.png" alt="btn">
+                </a>
+                <h3> Casa Bolton </h3>
+            </div>
+			<div class="ui-block-a">
+                <a href="#arryn" data-role="button" data-inline="true">
+                    <img src="botones/boton04.png" alt="btn">
+                </a>
+                <h3> Casa Arryn </h3>
+            </div>
+			<div class="ui-block-b">
+                <a href="#tyrell" data-role="button" data-inline="true">
+                	<img src="botones/boton05.png" alt="btn">
+                </a>
+                <h3> Casa Tyrell </h3>
+            </div>
+			<div class="ui-block-c">
+                <a href="#martell" data-role="button" data-inline="true">
+                	<img src="botones/boton06.png" alt="btn">
+                </a>
+                <h3> Casa Martell </h3>
+            </div>
+			<div class="ui-block-a">
+                <a href="#lannister" data-role="button" data-inline="true">
+                	<img src="botones/boton07.png" alt="btn">
+                </a>
+                <h3> Casa Lannister </h3>
+            </div>
+			<div class="ui-block-b">
+                <a href="#targaryen" data-role="button" data-inline="true">
+                	<img src="botones/boton08.png" alt="btn">
+                </a>
+                <h3> Casa Targaryen </h3>
+            </div>
+			<div class="ui-block-c">
+                <a href="#stark" data-role="button" data-inline="true">
+                	<img src="botones/boton09.png" alt="btn">
+                </a>
+                <h3> Casa Stark </h3>
+            </div>
+            <div class="ui-block-a">
+                <a href="#lista" data-role="button" data-inline="true">
+                	<img src="botones/lista.png" alt="btn">
+                </a>
+                <h3> Lista </h3>
+            </div>
+            
+            <div class="ui-block-b">
+                <a href="#acercade" data-role="button" data-inline="true">
+                	<img src="botones/acercade.png" alt="btn">
+                </a>
+                <h3> Acerca de </h3>
+            </div>
+
+		</div>        
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>
+
+
+
+  <!--CASAS --------------------------------------------------------------------------------------------------->
+
+
+
+<div data-role="page" id="baratheon">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+  
+<div data-role="content">
+        
+    <div class="ui-bar ui-bar-a ui-corner-all">
+        <h2>Casa Baratheon</h2>
+        <div class="ui-body ui-body-a ui-corner-all">
+            <img src="img/baratheonestandarte.png" alt="estandartebaratheon">
+            <p>La Casa Baratheon de Bastión de Tormentas es una casa noble de las Tierras de la Tormenta. Su asentamiento es Bastión de Tormentas, que fue residencia de la Casa Durrandon, los antiguos Reyes de la Tormenta. Su emblema es un venado coronado de sable sobre campo de oro. Su lema es Nuestra es la Furia.</p>
+        </div>
+        
+    </div>
+        
+</div>
+    
+  <div data-role="content">
+  
+    <ul data-role="listview" data-inset="true" data-split-icon="gear" id="familiabaratheon" class="casas">
+     
+      <li><a href="#robertbaratheon">
+      	<img src="personas/iconorobert.jpg" alt="robert">
+        <h3>Robert Baratheon</h3></a></li>
+     
+      <li><a href="#stannisbaratheon">
+      	<img src="personas/iconostannis.jpg" alt="stannis">
+        <h3>Stannis Baratheon</h3></a></li>
+      
+      <li><a href="#renlybaratheon">
+      	<img src="personas/iconorenly.jpg" alt="renly">
+        <h3>Renly Baratheon</h3></a></li>
+        
+      <li><a href="#joffreybaratheon">
+      	<img src="personas/iconojoffrey.jpg" alt="joffrey">
+        <h3>Joffrey Baratheon</h3></a></li>
+
+      <li><a href="#myrcellabaratheon">
+      	<img src="personas/iconomyrcella.jpg" alt="myrcella">
+        <h3>Myrcella Baratheon</h3></a></li>
+
+      <li><a href="#tommenbaratheon">
+      	<img src="personas/iconotommen.jpg" alt="tommen">
+        <h3>Tommen Baratheon</h3></a></li>
+      
+    </ul>
+      
+  </div> 
+      
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+        
+</div>
+
+
+<div data-role="page" id="greyjoy" class="casas">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+<div data-role="content">
+        
+    <div class="ui-bar ui-bar-a ui-corner-all">
+        <h2>Casa Greyjoy</h2>
+        <div class="ui-body ui-body-a ui-corner-all">
+            <img src="img/greyjoyestandarte.png" alt="estandartegreyjoy">
+            <p>La Casa Greyjoy de Pyke es una de las grandes casas de Poniente. Es la principal casa de las Islas del Hierro, un conjunto de islas desoladas en la costa oeste de Poniente. Su asentamiento es Pyke, un castillo situado en la isla del mismo nombre. Su emblema es un kraken de oro sobre campo de sable. Su lema es Nosotros no sembramos.</p>
+        </div>
+        
+    </div>
+        
+</div>
+  
+  <div data-role="content">
+  
+    <ul data-role="listview" data-inset="true" data-split-icon="gear" id="familiagreyjoy">
+     
+      <li><a href="#balongreyjoy">
+      	<img src="personas/iconobalon.jpg" alt="balon">
+        <h3>Balon Greyjoy</h3></a></li>
+     
+      <li><a href="#theongreyjoy">
+      	<img src="personas/iconotheon.jpg" alt="theon">
+        <h3>Theon Greyjoy</h3></a></li>
+        
+      <li><a href="#yaragreyjoy">
+      	<img src="personas/iconoyara.jpg" alt="yara">
+        <h3>Yara Greyjoy</h3></a></li>
+      
+    </ul>
+      
+  </div> 
+      
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+        
+</div>
+
+
+<div data-role="page" id="bolton">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+    
+    <div class="ui-bar ui-bar-a ui-corner-all">
+        <h2>Casa Bolton</h2>
+        <div class="ui-body ui-body-a ui-corner-all">
+            <img src="img/boltonestandarte.png" alt="estandartebolton">
+            <p>La Casa Bolton de Fuerte Terror es una antigua casa noble descendiente de los Primeros Hombres y actual gobernante del Norte. Su asentamiento es Fuerte Terror. Su emblema es un hombre desollado de gules en campo carnación de sangre. Su lema es "Nuestras espadas están afiladas".</p>
+        </div>
+        
+    </div>
+      
+    </div>
+  
+  <div data-role="content">
+  
+    <ul data-role="listview" data-inset="true" data-split-icon="gear">
+     
+      <li><a href="#roosebolton">
+      	<img src="personas/iconoroose.jpg" alt="roose">
+        <h3>Roose Bolton</h3></a></li>
+     
+      <li><a href="#ramsaybolton">
+      	<img src="personas/iconoramsay.jpg" alt="ramsay">
+        <h3>Ramsay Bolton</h3></a></li>
+      
+    </ul>
+      
+  </div> 
+      
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+        
+</div>
+
+
+<div data-role="page" id="arryn">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+<div data-role="content">
+        
+    <div class="ui-bar ui-bar-a ui-corner-all">
+        <h2>Casa Arryn</h2>
+        <div class="ui-body ui-body-a ui-corner-all">
+            <img src="img/arrynestandarte.png" alt="estandartearryn">
+            <p>La Casa Arryn del Nido de Águilas es la casa principal del Valle de Arryn y las Montañas de la Luna. Su asentamiento principal es el Nido de Águilas, pero tienen muchos otros asentamientos menores. Su linaje se extiende hasta la antigua nación de los Ándalos que invadió Poniente. Su emblema es un creciente y un halcón de plata en campo de cielo. Su lema es Tan Alto como el Honor.</p>
+        </div>
+        
+    </div>
+        
+</div>
+  
+  <div data-role="content">
+  
+    <ul data-role="listview" data-inset="true" data-split-icon="gear">
+     
+      <li><a href="#jonarryn">
+      	<img src="personas/iconojonarryn.jpg" alt="jonarr">
+        <h3>Jon Arryn</h3></a></li>
+     
+      <li><a href="#robertarryn">
+      	<img src="personas/iconorobertarryn.jpg" alt="robertarr">
+        <h3>Robert Arryn</h3></a></li>
+      
+    </ul>
+      
+  </div> 
+      
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+        
+</div>
+
+
+<div data-role="page" id="tyrell">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+  
+<div data-role="content">
+        
+    <div class="ui-bar ui-bar-a ui-corner-all">
+        <h2>Casa Tyrell</h2>
+        <div class="ui-body ui-body-a ui-corner-all">
+            <img src="img/tyrellestandarte.png" alt="estandartetyrell">
+            <p>La Casa Tyrell de Altojardín es la casa gobernante del Dominio. Su asentamiento es Altojardín. Su emblema es una rosa en oro sobre campo de sinople. Su lema es Crecer Fuerte.</p>
+        </div>
+        
+    </div>
+        
+</div>
+    
+  <div data-role="content">
+  
+    <ul data-role="listview" data-inset="true" data-split-icon="gear">
+     
+      <li><a href="#macetyrell">
+      	<img src="personas/iconomace.jpg" alt="mace">
+        <h3>Mace Tyrell</h3></a></li>
+     
+      <li><a href="#margaerytyrell">
+      	<img src="personas/iconomargaery.jpg" alt="margaery">
+        <h3>Margaery Tyrell</h3></a></li>
+      
+      <li><a href="#lorastyrell">
+      	<img src="personas/iconoloras.jpg" alt="loras">
+        <h3>Loras Tyrell</h3></a></li>
+      
+    </ul>
+      
+  </div> 
+      
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+        
+</div>
+
+
+<div data-role="page" id="martell">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+<div data-role="content">
+        
+    <div class="ui-bar ui-bar-a ui-corner-all">
+        <h2>Casa Martell</h2>
+        <div class="ui-body ui-body-a ui-corner-all">
+            <img src="img/martellestandarte.png" alt="estandartemartell">
+            <p>La Casa Nymeros Martell de Lanza del Sol es la casa gobernante de Dorne. La palabra Nymeros significa "de la línea de Nymeria", aunque generalmente es llamada sólo Casa Martell. Su asentamiento es el Palacio Antiguo de Lanza del Sol. Su emblema es un sol de gules atravesado por una lanza de oro sobre fondo naranja. Su lema es Nunca Doblegado, Nunca Roto.</p>
+        </div>
+        
+    </div>
+        
+</div>
+  
+  <div data-role="content">
+  
+    <ul data-role="listview" data-inset="true" data-split-icon="gear">
+     
+      <li><a href="#doranmartell">
+      	<img src="personas/iconodoran.jpg" alt="doran">
+        <h3>Doran Martell</h3></a></li>
+     
+      <li><a href="#oberynmartell">
+      	<img src="personas/iconooberyn.jpg" alt="oberyn">
+        <h3>Oberyn Martell</h3></a></li>
+        
+      <li><a href="#trystanemartell">
+      	<img src="personas/iconotrystane.jpg" alt="trystane">
+        <h3>Trystane Martell</h3></a></li>
+      
+    </ul>
+      
+  </div> 
+      
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+        
+</div>
+
+
+<div data-role="page" id="lannister">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+  
+<div data-role="content">
+        
+    <div class="ui-bar ui-bar-a ui-corner-all">
+        <h2>Casa Lannister</h2>
+        <div class="ui-body ui-body-a ui-corner-all">
+            <img src="img/lannisterestandarte.png" alt="estandartelannister">
+            <p>La Casa Lannister de Roca Casterly es la principal casa noble de las Tierras del Oeste. Su asentamiento es Roca Casterly. Su emblema es un león rampante de oro sobre campo de gules. Su lema es ¡Oye mi Rugido!, aunque su lema no oficial, Un Lannister siempre paga sus deudas, es más conocido.</p>
+        </div>
+        
+    </div>
+        
+</div>
+    
+  <div data-role="content">
+  
+    <ul data-role="listview" data-inset="true" data-split-icon="gear">
+     
+      <li><a href="#tywinlannister">
+      	<img src="personas/iconotywin.jpg" alt="tywin">
+        <h3>Tywin Lannister</h3></a></li>
+     
+      <li><a href="#cerseilannister">
+      	<img src="personas/iconocersei.jpg" alt="cersei">
+        <h3>Cersei Lannister</h3></a></li>
+     
+      <li><a href="#jaimelannister">
+      	<img src="personas/iconojaime.jpg" alt="jaime">
+        <h3>Jaime Lannister</h3></a></li>
+
+      <li><a href="#tyrionlannister">
+      	<img src="personas/iconotyrion.jpg" alt="tyrion">
+        <h3>Tyrion Lannister</h3></a></li>
+
+      
+    </ul>
+      
+  </div> 
+      
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+        
+</div>
+
+
+<div data-role="page" id="targaryen">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+<div data-role="content">
+        
+    <div class="ui-bar ui-bar-a ui-corner-all">
+        <h2>Casa Targaryen</h2>
+        <div class="ui-body ui-body-a ui-corner-all">
+            <img src="img/targaryenestandarte.png" alt="estandartetargaryen">
+            <p>La Casa Targaryen es una casa noble de ascendencia Valyria que escapó de la Maldición. Sus asentamientos eran la capital del reino Desembarco del Rey, la isla de Rocadragón y el castillo de Refugio Estival. Su emblema es un dragón de tres cabezas de gules en campo sable, representando a Aegon I y sus hermanas Rhaenys y Visenya. Su lema es Fuego y Sangre.</p>
+        </div>
+        
+    </div>
+        
+</div>
+  
+  <div data-role="content">
+  
+    <ul data-role="listview" data-inset="true" data-split-icon="gear">
+     
+      <li><a href="#aemontargaryen">
+      	<img src="personas/iconoaemon.jpg" alt="aemon">
+        <h3>Aemon Targaryen</h3></a></li>
+     
+      <li><a href="#viserystargaryen">
+      	<img src="personas/iconoviserys.jpg" alt="viserys">
+        <h3>Viserys Targaryen</h3></a></li>
+   
+      <li><a href="#daenerystargaryen">
+      	<img src="personas/iconodaenerys.jpg" alt="daenerys">
+        <h3>Daenerys Targaryen</h3></a></li>
+   
+    </ul>
+      
+  </div> 
+      
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+        
+</div>
+
+
+<div data-role="page" id="stark">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+<div data-role="content">
+        
+    <div class="ui-bar ui-bar-a ui-corner-all">
+        <h2>Casa Stark</h2>
+        <div class="ui-body ui-body-a ui-corner-all">
+            <img src="img/starkestandarte.png" alt="estandartestark">
+            <p>La Casa Stark de Invernalia es una casa noble del Norte. Su asentamiento es Invernalia. Durante siglos, fue la casa principal del Norte y su linaje se extiende hasta los Primeros Hombres, gobernando el Norte como reyes por derecho propio. Su emblema es un lobo huargo de cenizo corriendo sobre campo de plata. Su lema es Se acerca el Invierno. Su mandoble ancestral de acero valyrio se llamaba Hielo.</p>
+        </div>
+        
+    </div>
+        
+</div>
+  
+  <div data-role="content">
+  
+    <ul data-role="listview" data-inset="true" data-split-icon="gear">
+     
+      <li><a href="#eddardstark">
+      	<img src="personas/iconoeddard.jpg" alt="eddard">
+        <h3>Eddard Stark</h3></a></li>
+     
+      <li><a href="#benjenstark">
+      	<img src="personas/iconobenjen.jpg" alt="benjen">
+        <h3>Benjen Stark</h3></a></li>
+      
+      <li><a href="#robbstark">
+      	<img src="personas/iconorobb.jpg" alt="robbstark">
+        <h3>Robb Stark</h3></a></li>
+
+      <li><a href="#sansastark">
+      	<img src="personas/iconosansa.jpg" alt="sansa">
+        <h3>Sansa Stark</h3></a></li>
+
+      <li><a href="#aryastark">
+      	<img src="personas/iconoarya.jpg" alt="arya">
+        <h3>Arya Stark</h3></a></li>
+
+      <li><a href="#branstark">
+      	<img src="personas/iconobran.jpg" alt="bran">
+        <h3>Bran Stark</h3></a></li>
+
+      <li><a href="#rickonstark">
+      	<img src="personas/iconorickon.jpg" alt="rickon">
+        <h3>Rickon Stark</h3></a></li>
+
+      <li><a href="#jonsnow">
+      	<img src="personas/iconojon.jpg" alt="jon">
+        <h3>Jon Snow</h3></a></li>
+
+    </ul>
+      
+  </div> 
+      
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+        
+</div>
+
+  
+  <!--PERSONAJES --------------------------------------------------------------------------------------------------->
+  
+  <!--BARATHEON --------------------------------------------------------------------------------------------------->
+  
+  
+<div data-role="page" id="robertbaratheon">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotorobert.jpg" alt="robertbaratheon">
+	</h1>
+    
+	<h1>Robert Baratheon</h1> 
+    
+	<p>El rey Robert Baratheon fue cabeza de la Casa Baratheon y Rey de los Siete Reinos desde 283 AC hasta su muerte en 298 AC. Fue coronado luego de la victoria de los rebeldes en la Guerra del Usurpador.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>
+
+<div data-role="page" id="stannisbaratheon">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotostannis.jpg" alt="stannisbaratheon">
+	</h1>
+    
+	<h1>Stannis Baratheon</h1> 
+    
+	<p>El rey Stannis Baratheon es Rey de los Siete Reinos desde 298 AC, año en que su hermano el rey Robert I murió y él se proclamó su legítimo heredero. Es el segundo hijo de Lord Steffon Baratheon y Lady Cassana Estermont, y hermano de Robert y Renly. Después de la Rebelión de Robert, el nuevo rey le nombró Señor de Rocadragón y Señor Supremo de las Tierras de la Tormenta. Sirvió en el Consejo Privado de su hermano como Consejero Naval.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>
+
+<div data-role="page" id="renlybaratheon">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotorenly.jpg" alt="renlybaratheon">
+	</h1>
+    
+	<h1>Renly Baratheon</h1> 
+    
+	<p>El rey Renly Baratheon fue Rey de los Siete Reinos desde 298 AC, año en que su hermano el rey Robert I murió y se proclamó su heredero, hasta su propia muerte en 299 AC. Fue el hijo menor de Lord Steffon Baratheon y Lady Cassana Estermont. Luego de la Guerra del Usurpador fue nombrado Señor de Bastión de Tormentas. Sirvió en el Consejo Privado de Robert I como Consejero de Edictos.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>
+
+<div data-role="page" id="joffreybaratheon">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotojoffrey.jpg" alt="joffreybaratheon">
+	</h1>
+    
+	<h1>Joffrey Baratheon</h1> 
+    
+	<p>El rey Joffrey Baratheon fue Rey de los Siete Reinos desde 298 AC hasta su muerte en 300 AC. Fue, oficialmente, el hijo primogénito del rey Robert Baratheon y la reina Cersei Lannister; sin embargo, su padre biológico es Jaime Lannister, el hermano de la reina. Tiene dos hermanos, Myrcella y Tommen.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>
+
+<div data-role="page" id="myrcellabaratheon">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotomyrcella.jpg" alt="myrcellabaratheon">
+	</h1>
+    
+	<h1>Myrcella Baratheon</h1> 
+    
+	<p>La princesa Myrcella Baratheon es la única hija del rey Robert Baratheon y la reina Cersei Lannister. Tiene dos hermanos, Joffrey y Tommen. Al igual que ellos, su padre biológico es Jaime Lannister, el hermano de la reina. Es la prometida del príncipe Trystane Martell y pupila del padre de éste, el príncipe Doran Martell de Dorne.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div> 
+
+<div data-role="page" id="tommenbaratheon">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fototommen.jpg" alt="tommenbaratheon">
+	</h1>
+    
+	<h1>Tommen Baratheon</h1> 
+    
+	<p>El rey Tommen Baratheon es Rey de los Siete Reinos desde 300 AC. Es, oficialmente, el tercer hijo del rey Robert Baratheon y la reina Cersei Lannister. Al igual que sus dos hermanos, Joffrey y Myrcella, su padre biológico es Ser Jaime Lannister, el hermano de la reina.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div> 
+
+  <!--GREYJOY --------------------------------------------------------------------------------------------------->
+  
+<div data-role="page" id="balongreyjoy">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotobalon.jpg" alt="balongreyjoy">
+	</h1>
+    
+	<h1>Balon Greyjoy</h1> 
+    
+	<p>El rey Balon Greyjoy fue cabeza de la Casa Greyjoy y, como tal, Señor Supremo de las Islas del Hierro y Señor de Pyke. Fue el capitán del barcoluengo Gran Kraken.[1] En 289 AC proclamó su independencia del Trono de Hierro, pero fue derrotado por las fuerzas del rey Robert I. Durante la Guerra de los Cinco Reyes se proclamó rey una vez más, hasta su muerte.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div> 
+
+<div data-role="page" id="theongreyjoy">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fototheon.jpg" alt="theongreyjoy">
+	</h1>
+    
+	<h1>Theon Greyjoy</h1> 
+    
+	<p>Theon Greyjoy es el tercer hijo y heredero de Lord Balon Greyjoy y Lady Alannys Harlaw. Tras la Rebelión Greyjoy, Theon fue llevado a Invernalia como pupilo de Lord Eddard Stark para asegurar la lealtad de los Hombres del Hierro. Al servicio del rey Robb Stark, fue enviado a las Islas del Hierro como mensajero, donde se hizo capitán del Zorra Marina.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div> 
+  
+<div data-role="page" id="yaragreyjoy">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotoyara.jpg" alt="yaragreyjoy">
+	</h1>
+    
+	<h1>Yara Greyjoy</h1> 
+    
+	<p>Yara Greyjoy es la única hija de Lord Balon Greyjoy y Lady Alannys Harlaw. Es la capitana del Viento Negro.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>   
+  
+  <!--BOLTON --------------------------------------------------------------------------------------------------->
+  
+<div data-role="page" id="roosebolton">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotoroose.jpg" alt="roosebolton">
+	</h1>
+    
+	<h1>Roose Bolton</h1> 
+    
+	<p>Lord Roose Bolton, apodado Lord Sanguijuela, es cabeza de la Casa Bolton y Señor de Fuerte Terror. Luego de la Boda Roja es nombrado Guardián del Norte. Está casado en terceras nupcias con Walda Frey.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>   
+  
+<div data-role="page" id="ramsaybolton">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotoramsay.jpg" alt="ramsaybolton">
+	</h1>
+    
+	<h1>Ramsay Bolton</h1> 
+    
+	<p>Ramsay Bolton es el hijo bastardo legitimado de Lord Roose Bolton. Originalmente llamado Ramsay Nieve, fue conocido como el Bastardo de Bolton y el Bastardo de Fuerte Terror.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>   
+  
+  <!--ARRYN --------------------------------------------------------------------------------------------------->
+  
+<div data-role="page" id="jonarryn">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotojonarryn.jpg" alt="jonarryn">
+	</h1>
+    
+	<h1>Jon Arryn</h1> 
+    
+	<p>Lord Jon Arryn fue cabeza de la Casa Arryn y, como tal, Señor del Nido de Águilas, Defensor del Valle y Guardián del Oriente durante el reinado de Aerys II Targaryen y Robert I Baratheon. Sirvió como Mano del Rey de Robert I hasta su muerte.[1] Casado en terceras nupcias con Lysa Tully, dejó un heredero enfermizo y débil, Robert Arryn.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>     
+  
+<div data-role="page" id="robertarryn">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotorobertarryn.jpg" alt="robertarryn">
+	</h1>
+    
+	<h1>Robert Arryn</h1> 
+    
+	<p>Lord Robert Arryn es cabeza de la Casa Arryn y, como tal, Señor del Nido de Águilas y Defensor del Valle. Es el único hijo de Lord Jon Arryn y Lady Lysa Tully.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>     
+  
+  <!--TYRELL --------------------------------------------------------------------------------------------------->
+  
+<div data-role="page" id="macetyrell">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotomace.jpg" alt="macetyrell">
+	</h1>
+    
+	<h1>Mace Tyrell</h1> 
+    
+	<p>Lord Mace Tyrell es cabeza de la Casa Tyrell y, como tal, Señor de Altojardín, Defensor de las Marcas, Alto Mariscal del Dominio y Guardián del Sur. Es el hijo mayor de Lord Luthor Tyrell y Lady Olenna Redwyne. Está casado con Lady Alerie Hightower con quien tiene cuatro hijos, Willas, Garlan, Loras y Margaery. Es Mano del rey Tommen I Baratheon.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>     
+  
+<div data-role="page" id="margaerytyrell">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotomargaery.jpg" alt="margaerytyrell">
+	</h1>
+    
+	<h1>Margaery Tyrell</h1> 
+    
+	<p>La reina Margaery Tyrell es la única hija de Lord Mace Tyrell y Lady Alerie Hightower. Tiene tres hermanos, Willas, Garlan y Loras. Por sus matrimonios con Renly Baratheon, Joffrey I Baratheon y, su último y actual esposo Tommen I Baratheon, se convirtió en Reina de los Siete Reinos.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>     
+  
+<div data-role="page" id="lorastyrell">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotoloras.jpg" alt="lorastyrell">
+	</h1>
+    
+	<h1>Loras Tyrell</h1> 
+    
+	<p>Ser Loras Tyrell, apodado el Caballero de las Flores, es el tercer hijo de Lord Mace Tyrell y Lady Alerie Hightower. Tiene dos hermanos, Willas y Garlan, y una hermana, Margaery. Su éxito en las justas y torneos y su gran atractivo físico le convirtieron en una figura famosa dentro de las cortes de los Siete Reinos. A pesar de su juventud y su figura esbelta, es un guerrero capaz y hábil. Su escudo de armas personal son tres rosas doradas en campo de sinople, denotando su estatus de tercer hijo.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>     
+  
+  <!--MARTELL --------------------------------------------------------------------------------------------------->
+  
+<div data-role="page" id="doranmartell">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotodoran.jpg" alt="doranmartell">
+	</h1>
+    
+	<h1>Doran Martell</h1> 
+    
+	<p>El príncipe Doran Nymeros Martell es cabeza de la Casa Martell y, como tal, Señor de Lanza del Sol y Príncipe de Dorne.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>     
+  
+<div data-role="page" id="oberynmartell">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotooberyn.jpg" alt="oberynmartell">
+	</h1>
+    
+	<h1>Oberyn Martell</h1> 
+    
+	<p>El príncipe Oberyn Nymeros Martell, conocido como la Víbora Roja, fue el hermano menor del Príncipe de Dorne Doran Martell. Tuvo ocho hijas bastardas, conocidas como las Serpientes de Arena, las cuatro menores hijas de su última amante, Ellaria Arena.</p>
+    </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>     
+  
+<div data-role="page" id="trystanemartell">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fototrystane.jpg" alt="trystanemartell">
+	</h1>
+    
+	<h1>Trystane Martell</h1> 
+    
+	<p>El príncipe Trystane Nymeros Martell es el hijo menor del príncipe Doran Martell y su consorte, Mellario de Norvos. Tiene dos hermanos mayores, la princesa Arianne y el príncipe Quentyn. Está prometido en matrimonio a la princesa Myrcella Baratheon.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>     
+  
+  <!--LANNISTER --------------------------------------------------------------------------------------------------->
+  
+<div data-role="page" id="tywinlannister">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fototywin.jpg" alt="tywinlannister">
+	</h1>
+    
+	<h1>Tywin Lannister</h1> 
+    
+	<p>Lord Tywin Lannister fue cabeza de la Casa Lannister y, como tal, Señor de Roca Casterly, Escudo de Lannisport y Guardián del Occidente. Además, fue Mano del Rey de Aerys II Targaryen por casi treinta años, cargo que volvió a ocupar posteriormente durante el reinado de su nieto Joffrey Baratheon. Estuvo casado con su prima, Lady Joanna Lannister, con quien tuvo tres hijos, Jaime, Cersei y Tyrion.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>     
+  
+<div data-role="page" id="jaimelannister">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotojaime.jpg" alt="jaimelannister">
+	</h1>
+    
+	<h1>Jaime Lannister</h1> 
+    
+	<p>Ser Jaime Lannister, apodado Matarreyes, es el Lord Comandante de la Guardia Real del rey Tommen I Baratheon. Es el segundo hijo de Lord Tywin Lannister y Lady Joanna Lannister. Tiene una hermana gemela, Cersei, y un hermano menor, Tyrion. Se ganó el apodo de Matarreyes luego de asesinar al rey Aerys II al término de la Rebelión de Robert.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>     
+  
+<div data-role="page" id="cerseilannister">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotocersei.jpg" alt="cerseilannister">
+	</h1>
+    
+	<h1>Cersei Lannister</h1> 
+    
+	<p>La reina Cersei Lannister es la hija mayor de Lord Tywin Lannister y Lady Joanna Lannister. Tiene dos hermanos, su gemelo Jaime y Tyrion. Luego de la Guerra del Usurpador se casó con el nuevo rey, Robert Baratheon, y se convirtió en Reina de los Siete Reinos. Es madre de tres hijos, Joffrey, Myrcella y Tommen, todos fruto de su secreta relación incestuosa con su hermano Jaime.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>     
+  
+<div data-role="page" id="tyrionlannister">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fototyrion.jpg" alt="tyrionlannister">
+	</h1>
+    
+	<h1>Tyrion Lannister</h1> 
+    
+	<p>Tyrion Lannister es el tercer hijo de Lord Tywin Lannister y Lady Joanna Lannister, y hermano menor de los gemelos Cersei y Jaime. Es apodado el Gnomo y Mediohombre debido a su enanismo.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>     
+  
+  <!--LANNISTER --------------------------------------------------------------------------------------------------->
+  
+<div data-role="page" id="aemontargaryen">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotoaemon.jpg" alt="aemontargaryen">
+	</h1>
+    
+	<h1>Aemon Targaryen</h1> 
+    
+	<p>El príncipe Aemon Targaryen, apodado el Caballero Dragón, fue el segundo hijo del rey Viserys II Targaryen y Lady Larra Rogare. Fue Lord Comandante de la Guardia Real durante el reinado de su hermano Aegon IV Targaryen. Su emblema personal consistía en el dragón tricéfalo de los Targaryen de oro blanco.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>     
+
+<div data-role="page" id="viserystargaryen">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotoviserys.jpg" alt="viserystargaryen">
+	</h1>
+    
+	<h1>Viserys Targaryen</h1> 
+    
+	<p>El príncipe Viserys Targaryen, apodado el Rey Mendigo, fue el quinto hijo del rey Aerys II Targaryen y su hermana esposa, la reina Rhaella. Se convirtió en el heredero de su padre luego de que su hermano Rhaegar muriera en la Rebelión de Robert. La guerra lo convirtió en exiliado, desde donde planeó recuperar el Trono de Hierro.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>     
+
+<div data-role="page" id="daenerystargaryen">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotodaenerys.jpg" alt="daenerystargaryen">
+	</h1>
+    
+	<h1>Daenerys Targaryen</h1> 
+    
+	<p>La reina Daenerys Targaryen, también llamada Daenerys de la Tormenta, La que no Arde, Rompedora de Cadenas, Madre de Dragones y, de manera más informal, Dany, es la hija menor del rey Aerys II Targaryen y su hermana esposa, la reina Rhaella. Luego de la Guerra del Usurpador, durante la que murieron sus padres y su hermano mayor Rhaegar, ella y su hermano Viserys vivieron en el exilio en varias Ciudades Libres. Luego de arrasar la Bahía de los Esclavos, se convirtió en Reina de Meereen.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>     
+
+  <!--STARK --------------------------------------------------------------------------------------------------->
+
+<div data-role="page" id="eddardstark">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotoeddard.jpg" alt="eddardstark">
+	</h1>
+    
+	<h1>Eddard Stark</h1> 
+    
+	<p>Lord Eddard Stark, apodado Ned, fue cabeza de la Casa Stark y, como tal, Señor de Invernalia y Guardián del Norte. Durante la Guerra del Usupador se casó con Lady Catelyn Tully, con quien tuvo cinco hijos, Robb, Sansa, Arya, Bran y Rickon. Tuvo, además, un hijo bastardo, Jon Nieve.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>     
+
+<div data-role="page" id="benjenstark">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotobenjen.jpg" alt="benjenstark">
+	</h1>
+    
+	<h1>Benjen Stark</h1> 
+    
+	<p>Benjen Stark es el hijo menor de Lord Rickard Stark y Lady Lyarra Stark, y un hermano juramentado de la Guardia de la Noche. Es el Primer Explorador, líder de los exploradores de la Guardia.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>     
+
+<div data-role="page" id="robbstark">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotorobb.jpg" alt="robbstark">
+	</h1>
+    
+	<h1>Robb Stark</h1> 
+    
+	<p>El rey Robb Stark fue el hijo primogénito de Lord Eddard Stark y Lady Catelyn Tully, siendo desde su nacimiento el heredero de Invernalia y el Norte. Tiene dos hermanas, Sansa y Arya; dos hermanos, Bran y Rickon, y un medio-hermano bastardo, Jon Nieve. Era frecuentemente acompañado por su lobo huargo Viento Gris, quien siempre le acompañaba en la batalla.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>     
+
+<div data-role="page" id="sansastark">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotosansa.jpg" alt="sansastark">
+	</h1>
+    
+	<h1>Sansa Stark</h1> 
+    
+	<p>Sansa Stark es la hija mayor de Lord Eddard Stark y Lady Catelyn Tully. Tiene tres hermanos, Robb, Bran y Rickon; una hermana, Arya, y un hermano bastardo, Jon Nieve. Está casada con Tyrion Lannister.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>     
+
+<div data-role="page" id="aryastark">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotoarya.jpg" alt="aryastark">
+	</h1>
+    
+	<h1>Arya Stark</h1> 
+    
+	<p>Arya Stark es la segunda hija de Lord Eddard Stark y Lady Catelyn Tully. Tiene una hermana, Sansa; tres hermanos, Robb, Bran y Rickon, y un medio-hermano bastardo, Jon Nieve, al que aprecia mucho. Como algunos de sus hermanos, ella es una cambiapieles,[1] pudiendo entrar en la piel de su loba huargo, Nymeria, nombrada en referencia a la reina guerrera de los Rhoynar.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>     
+
+<div data-role="page" id="branstark">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotobran.jpg" alt="branstark">
+	</h1>
+    
+	<h1>Bran Stark</h1> 
+    
+	<p>Brandon Stark, mejor conocido como Bran, es el segundo hijo y heredero de Lord Eddard Stark y Lady Catelyn Tully. Tiene dos hermanas, Sansa y Arya; dos hermanos, Robb y Rickon, y un medio-hermano bastardo, Jon Nieve. Debido a una caída, queda paralítico y depende de Hodor, un criado retrasado, para desplazarse. Está siempre acompañado de su lobo huargo Verano.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>     
+
+<div data-role="page" id="rickonstark">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotorickon.jpg" alt="rickonstark">
+	</h1>
+    
+	<h1>Rickon Stark</h1> 
+    
+	<p>Rickon Stark es el hijo menor de Lord Eddard Stark y Lady Catelyn Tully. Tiene dos hermanos, Robb y Bran; dos hermanas, Sansa y Arya, y un medio-hermano bastardo, Jon Nieve. Normalmente es acompañado por su lobo huargo, Peludo.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>     
+
+<div data-role="page" id="jonsnow">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+	<h1>
+      	<img src="personas/fotojon.jpg" alt="jonsnow">
+	</h1>
+    
+	<h1>Jon Snow</h1> 
+    
+	<p>Lord Jon Nieve es el Lord Comandante de la Guardia de la Noche nº 998. Es hijo bastardo de Lord Eddard Stark. Su lobo huargo, Fantasma, es albino y mudo. El emblema personal de Jon consiste en los colores de la Casa Stark invertidos, un lobo huargo de plata corriendo sobre fondo de cenizo.</p>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>  
+
+  <!--ACERCA DE --------------------------------------------------------------------------------------------------->
+
+<div data-role="page" id="acercade">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+    
+  <div data-role="content">
+    
+    <h1><img src="s-l640.jpg" alt="got-image"></h1>
+    
+    <h2>GoT Info App</h2>
+    <h2>By Lucas Bruno Paviotti</h2>
+    <h2>https://github.com/Imhest</h2>
+    
+      
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+  
+</div>  
+
+
+
+  <!--LISTA --------------------------------------------------------------------------------------------------->
+
+<div data-role="page" id="lista">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1><img src="logothrones.png" alt="logo"></h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+  </div>
+  
+  <div data-role="content" id="listacaps">
+  
+     
+    <div data-role="collapsibleset" id="listadotemporada">
+    	<div data-role="collapsible" id="temporada1">
+        	<h2>Temporada 1</h2>
+    		<div data-role="controlgroup">
+            
+            <input type="checkbox" id="s1e1" store="capitulo1" />
+            <label for="s1e1">Se acerca el invierno</label>
+            <input type="checkbox" id="s1e2" store="capitulo2" />
+            <label for="s1e2">El camino real</label>
+            <input type="checkbox" id="s1e3" store="capitulo3" />
+            <label for="s1e3">Lord Nieve</label>
+            <input type="checkbox" id="s1e4" store="capitulo4" />
+            <label for="s1e4">Tullidos, bastardos y cosas rotas</label>
+            <input type="checkbox" id="s1e5" store="capitulo5" />
+            <label for="s1e5">El lobo y el león</label>
+            <input type="checkbox" id="s1e6" store="capitulo6" />
+            <label for="s1e6">Una corona de oro</label>
+            <input type="checkbox" id="s1e7" store="capitulo7" />
+            <label for="s1e7">Ganas o mueres</label>
+            <input type="checkbox" id="s1e8" store="capitulo8" />
+            <label for="s1e8">Por el lado de la punta</label>
+            <input type="checkbox" id="s1e9" store="capitulo9" />
+            <label for="s1e9">Baelor</label>
+            <input type="checkbox" id="s1e10" store="capitulo10" />
+            <label for="s1e10">Fuego y hielo</label>
+            
+        	</div>
+    	</div>
+
+    	<div data-role="collapsible" id="temporada2">
+        	<h2>Temporada 2</h2>
+    		<div data-role="controlgroup">
+            
+            <input type="checkbox" id="s2e1" store="capitulo11" />
+            <label for="s2e1">El Norte no olvida</label>
+            <input type="checkbox" id="s2e2" store="capitulo12" />
+            <label for="s2e2">Las tierras de la noche</label>
+            <input type="checkbox" id="s2e3" store="capitulo13" />
+            <label for="s2e3">Lo que está muerto no puede morir</label>
+            <input type="checkbox" id="s2e4" store="capitulo14" />
+            <label for="s2e4">Jardín de huesos</label>
+            <input type="checkbox" id="s2e5" store="capitulo15" />
+            <label for="s2e5">El fantasma de Harrenhal</label>
+            <input type="checkbox" id="s2e6" store="capitulo16" />
+            <label for="s2e6">Los dioses antiguos y nuevos</label>
+            <input type="checkbox" id="s2e7" store="capitulo17" />
+            <label for="s2e7">Un hombre sin honor</label>
+            <input type="checkbox" id="s2e8" store="capitulo18" />
+            <label for="s2e8">Un príncipe de Invernalia</label>
+            <input type="checkbox" id="s2e9" store="capitulo19" />
+            <label for="s2e9">Aguasnegras</label>
+            <input type="checkbox" id="s2e10" store="capitulo20" />
+            <label for="s2e10">Valar Morghulis</label>
+            
+        	</div>
+    	</div>
+        
+    	<div data-role="collapsible" id="temporada3">
+        	<h2>Temporada 3</h2>
+    		<div data-role="controlgroup">
+            
+            <input type="checkbox" id="s3e1" store="capitulo21" />
+            <label for="s3e1">Valar Dohaeris</label>
+            <input type="checkbox" id="s3e2" store="capitulo22" />
+            <label for="s3e2">Alas negras, palabras negras</label>
+            <input type="checkbox" id="s3e3" store="capitulo23" />
+            <label for="s3e3">El camino del castigo</label>
+            <input type="checkbox" id="s3e4" store="capitulo24" />
+            <label for="s3e4">Y ahora su guardia ha terminado</label>
+            <input type="checkbox" id="s3e5" store="capitulo25" />
+            <label for="s3e5">Besado por el fuego</label>
+            <input type="checkbox" id="s3e6" store="capitulo26" />
+            <label for="s3e6">El ascenso</label>
+            <input type="checkbox" id="s3e7" store="capitulo27" />
+            <label for="s3e7">El oso y la doncella</label>
+            <input type="checkbox" id="s3e8" store="capitulo28" />
+            <label for="s3e8">Los segundos hijos</label>
+            <input type="checkbox" id="s3e9" store="capitulo29" />
+            <label for="s3e9">Las lluvias de Castamere</label>
+            <input type="checkbox" id="s3e10" store="capitulo30" />
+            <label for="s3e10">Mhysa</label>
+            
+        	</div>
+    	</div>
+        
+    	<div data-role="collapsible" id="temporada4">
+        	<h2>Temporada 4</h2>
+    		<div data-role="controlgroup">
+            
+            <input type="checkbox" id="s4e1" store="capitulo31" />
+            <label for="s4e1">Dos espadas</label>
+            <input type="checkbox" id="s4e2" store="capitulo32" />
+            <label for="s4e2">El león y la rosa</label>
+            <input type="checkbox" id="s4e3" store="capitulo33" />
+            <label for="s4e3">Rompedora de cadenas</label>
+            <input type="checkbox" id="s4e4" store="capitulo34" />
+            <label for="s4e4">Guardajuramentos</label>
+            <input type="checkbox" id="s4e5" store="capitulo35" />
+            <label for="s4e5">El primero de su nombre</label>
+            <input type="checkbox" id="s4e6" store="capitulo36" />
+            <label for="s4e6">Las leyes de los dioses y los hombres</label>
+            <input type="checkbox" id="s4e7" store="capitulo37" />
+            <label for="s4e7">Sinsonte</label>
+            <input type="checkbox" id="s4e8" store="capitulo38" />
+            <label for="s4e8">La Montaña y la Víbora</label>
+            <input type="checkbox" id="s4e9" store="capitulo39" />
+            <label for="s4e9">Los vigilantes del Muro</label>
+            <input type="checkbox" id="s4e10" store="capitulo40" />
+            <label for="s4e10">Los niños</label>
+            
+        	</div>
+    	</div> 
+        
+    	<div data-role="collapsible" id="temporada5">
+        	<h2>Temporada 5</h2>
+    		<div data-role="controlgroup">
+            
+            <input type="checkbox" id="s5e1" store="capitulo41" />
+            <label for="s5e1">Las guerras venideras</label>
+            <input type="checkbox" id="s5e2" store="capitulo42" />
+            <label for="s5e2">La Casa de Negro y Blanco</label>
+            <input type="checkbox" id="s5e3" store="capitulo43" />
+            <label for="s5e3">Gorrión Supremo</label>
+            <input type="checkbox" id="s5e4" store="capitulo44" />
+            <label for="s5e4">Hijos de la arpía</label>
+            <input type="checkbox" id="s5e5" store="capitulo45" />
+            <label for="s5e5">Matad al chico</label>
+            <input type="checkbox" id="s5e6" store="capitulo46" />
+            <label for="s5e6">Nunca doblegado, nunca roto</label>
+            <input type="checkbox" id="s5e7" store="capitulo47" />
+            <label for="s5e7">El regalo</label>
+            <input type="checkbox" id="s5e8" store="capitulo48" />
+            <label for="s5e8">La casa austera</label>
+            <input type="checkbox" id="s5e9" store="capitulo49" />
+            <label for="s5e9">Danza de dragones</label>
+            <input type="checkbox" id="s5e10" store="capitulo50" />
+            <label for="s5e10">Misericordia</label>
+            
+        	</div>
+    	</div>               
+	</div>
+      
+      
+  </div> 
+      
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright &copy; 2015 &middot; Game of Thrones</h1>
+  </div>
+        
+</div>
+
+
+
+
+</body>
+</html>
